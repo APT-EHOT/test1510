@@ -32,5 +32,19 @@ public class Main {
         firstCar.addPassenger();
         firstCar.removePassenger();
 
+        Van van = new Van(2000);
+        System.out.println(secondCar);
+        System.out.println(van);
+
+        System.out.println(van.currentPassengers);
+        van.addPassenger();
+        System.out.println(van.currentPassengers);
+        van.addPassenger();
+        van.addPassenger();
+
+        System.out.println(van.seats);
+
+        Ambulance ambulance = new Ambulance();
+        System.out.println(ambulance.seats);
     }
 }

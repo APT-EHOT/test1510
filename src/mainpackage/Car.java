@@ -12,7 +12,7 @@ public class Car {
     private double maxDistance;
 
     int currentPassengers = 0;
-    int seats = 4;
+    int seats;
 
     // Первичный конструктор
     public Car() {
@@ -20,6 +20,7 @@ public class Car {
         price = 10000.0;
         maxSpeed = 120.0;
         maxDistance = getDistance();
+        seats = 4;
     }
 
     public Car(String color, double price, double maxSpeed) {
